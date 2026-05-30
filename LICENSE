@@ -1,0 +1,160 @@
+Open Standard Reference License — CAPS Reference Implementations
+
+CAPS — Capability Admissibility Protection System
+
+Legal Status
+
+This is a permissive reference license for CAPS reference implementations.
+
+To the maximum extent permitted by law, this license grants broad permissions for use, modification, distribution, implementation, and extension while preserving truthful representation requirements.
+
+If any provision is found unenforceable, the remaining provisions remain in effect.
+
+
+Permission
+
+Permission is hereby granted, free of charge, to any person or organization to:
+
+use
+
+execute
+
+study
+
+reproduce
+
+publish
+
+distribute
+
+modify
+
+implement
+
+extend
+
+any CAPS reference implementation(s), including copies, forks, derivative works, demonstrations, and extensions, in whole or in part, for commercial or non-commercial use.
+
+No registration, fees, or approval required.
+
+Ownership
+
+No ownership transfer occurs through this license.
+
+This license grants permissions only.
+
+Conditions
+
+The following conditions apply:
+
+1. Truthful Representation
+
+Implementations and derivatives must not knowingly misrepresent:
+
+- origin
+- capabilities
+- benchmark results
+- compatibility
+- authorship
+- canonical status
+
+2. Use of Name “CAPS”
+
+The name “CAPS” must not be used to imply:
+
+* endorsement
+
+* certification
+
+* official status
+
+* governance authority
+
+3. Modified Implementations
+
+Modified or extended versions must not be presented as canonical CAPS reference implementations.
+
+Modified implementations should clearly indicate that changes were made.
+
+Attribution
+
+Attribution is not required, but appreciated.
+
+Suggested form (optional):
+
+Implements CAPS — Capability Admissibility Protection System
+
+Removal of attribution does not remove truthful representation requirements.
+
+Attribution must not imply endorsement or certification.
+
+
+Architecture License
+
+Conceptual architecture and documentation are licensed under:
+
+Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)
+
+https://creativecommons.org/licenses/by-nc/4.0/
+
+This applies only to architecture materials, documentation, diagrams, and explanatory content—not to reference implementation code unless explicitly stated.
+
+Permitted uses include, but are not limited to:
+
+* research
+
+* academic use
+
+* study and reproduction
+
+* non-commercial distribution
+
+Commercial use of architecture materials, documentation, diagrams, and explanatory content is not permitted under this license unless explicitly stated otherwise.
+
+
+Disclaimer
+
+These reference implementations are minimal demonstrations.
+
+They are intended to explore structural capability separation, visibility control, admissibility, deterministic behavior, and reproducibility.
+
+They do not constitute production systems and provide no guarantees of:
+
+* security
+
+* operational reliability
+
+* regulatory compliance
+
+* system performance
+
+* suitability for deployment
+
+Use is entirely at the user’s own risk and responsibility.
+
+No Warranty
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:
+
+MERCHANTABILITY
+
+FITNESS FOR A PARTICULAR PURPOSE
+
+NON-INFRINGEMENT
+
+IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM USE.
+
+Closing
+
+This repository is released to encourage:
+
+- independent validation
+- experimentation
+- verification
+- criticism
+- modification
+- exploration
+
+It explores structural capability visibility, admissibility, deterministic behavior, and reproducible visibility outcomes.
+
+Structure first. Truth always.
