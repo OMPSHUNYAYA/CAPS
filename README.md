@@ -285,6 +285,24 @@ Future demonstrations are expected to reuse shared structural resolution, determ
 
 ---
 
+## Reference Demonstration
+
+### CAPS-SmartBulb
+
+Reference implementation demonstrating structural capability visibility using a smart bulb capability surface.
+
+- [CAPS-SmartBulb Folder](demo/CAPS-SmartBulb/)
+- [SmartBulb README](demo/CAPS-SmartBulb/README.md)
+- [SmartBulb Script](demo/CAPS-SmartBulb/caps_smartbulb_v0_11.py)
+
+Example:
+
+```
+python demo/CAPS-SmartBulb/caps_smartbulb_v0_11.py --quickstart
+```
+
+---
+
 # 🧠 **Structural Visibility Principle**
 
 CAPS separates:
@@ -395,12 +413,12 @@ No forced visibility is valid output.
 
 # 📂 **Documentation**
 
-- Quickstart (`docs/Quickstart.md`)
-- FAQ (`docs/FAQ.md`)
-- Proof Sketch (`docs/Proof-Sketch.md`)
-- Architecture Notes (`docs/CAPS-Architecture-Notes.md`)
-- CAPS Challenge (`docs/CAPS-Challenge.md`)
-- Visibility Scenario Examples (`docs/CAPS-Visibility-Scenario-Examples.md`)
+- [Quickstart](docs/Quickstart.md)
+- [FAQ](docs/FAQ.md)
+- [Proof Sketch](docs/Proof-Sketch.md)
+- [Architecture Notes](docs/CAPS-Architecture-Notes.md)
+- [CAPS Challenge](docs/CAPS-Challenge.md)
+- [Visibility Scenario Examples](docs/CAPS-Visibility-Scenario-Examples.md)
 
 ---
 
@@ -414,13 +432,13 @@ These materials are provided for ecosystem positioning and are **not CAPS-specif
 
 ### Dependency Elimination Framework
 
-`docs/Dependency-Elimination-Framework.png`
+[Dependency Elimination Framework](docs/Dependency-Elimination-Framework.png)
 
 Illustrates the broader structural elimination philosophy across domains and the principle that removing non-fundamental dependencies may preserve structural outcomes.
 
 ### Shunyaya Structural Stack
 
-`docs/Shunyaya-Structural-Stack.png`
+[Shunyaya Structural Stack](docs/Shunyaya-Structural-Stack.png)
 
 Illustrates broader ecosystem positioning and shows CAPS as the capability visibility layer within the larger structural stack.
 
