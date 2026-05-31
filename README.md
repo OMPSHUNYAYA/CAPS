@@ -40,7 +40,7 @@ The demonstrations are intentionally designed to be:
 - inspectable
 - falsifiable
 
-CAPS may be interpreted as a structural visibility layer.
+CAPS may be interpreted as a structural capability visibility layer.
 
 It complements existing:
 
@@ -119,22 +119,44 @@ CAPS demonstrates:
 
 # ⚡ **Try CAPS In 30 Seconds**
 
-### Quickstart
+### SmartBulb Quickstart
 
 ```
 python demo/CAPS-SmartBulb/caps_smartbulb_v0_11.py --quickstart
 ```
 
+### DoorLock Quickstart
+
+```
+python demo/CAPS-DoorLock/caps_doorlock_v0_3.py --quickstart
+```
+
 ### Deterministic Replay
+
+SmartBulb:
 
 ```
 python demo/CAPS-SmartBulb/caps_smartbulb_v0_11.py --verify
 ```
 
-### Unsafe Request Demonstration
+DoorLock:
+
+```
+python demo/CAPS-DoorLock/caps_doorlock_v0_3.py --verify
+```
+
+### Unsafe Request Demonstrations
+
+SmartBulb:
 
 ```
 python demo/CAPS-SmartBulb/caps_smartbulb_v0_11.py --scenario local_on --profile balanced --request telemetry_leak --explain
+```
+
+DoorLock:
+
+```
+python demo/CAPS-DoorLock/caps_doorlock_v0_3.py --scenario remote_unlock --profile connected --request forged_remote_unlock --explain
 ```
 
 Expected observations:
@@ -202,7 +224,7 @@ Visibility collapses
 
 ↓
 
-Deterministic certificate preserved
+Deterministic certificate generated
 
 Telemetry capability persists.
 
@@ -268,11 +290,11 @@ The visibility surface changes.
 
 Current:
 
-- CAPS-SmartBulb — reference implementation
+- CAPS-SmartBulb — reference implementation for connected capability surfaces
+- CAPS-DoorLock — physical-access structural visibility demonstration
 
 Planned:
 
-- CAPS-DoorLock
 - CAPS-Printer
 - CAPS-Camera
 - CAPS-Vehicle
@@ -285,11 +307,13 @@ Future demonstrations are expected to reuse shared structural resolution, determ
 
 ---
 
-## Reference Demonstration
+## Reference Demonstrations
 
 ### CAPS-SmartBulb
 
 Reference implementation demonstrating structural capability visibility using a smart bulb capability surface.
+
+Quick Links:
 
 - [CAPS-SmartBulb Folder](demo/CAPS-SmartBulb/)
 - [SmartBulb README](demo/CAPS-SmartBulb/README.md)
@@ -299,6 +323,24 @@ Example:
 
 ```
 python demo/CAPS-SmartBulb/caps_smartbulb_v0_11.py --quickstart
+```
+
+---
+
+### CAPS-DoorLock
+
+Physical-access demonstration exploring structural visibility across capability-rich door-lock surfaces.
+
+Quick Links:
+
+- [CAPS-DoorLock Folder](demo/CAPS-DoorLock/)
+- [DoorLock README](demo/CAPS-DoorLock/README.md)
+- [DoorLock Script](demo/CAPS-DoorLock/caps_doorlock_v0_3.py)
+
+Example:
+
+```
+python demo/CAPS-DoorLock/caps_doorlock_v0_3.py --quickstart
 ```
 
 ---
