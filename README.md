@@ -131,6 +131,12 @@ python demo/CAPS-SmartBulb/caps_smartbulb_v0_11.py --quickstart
 python demo/CAPS-DoorLock/caps_doorlock_v0_3.py --quickstart
 ```
 
+### Router Quickstart
+
+```
+python demo/CAPS-Router/caps_router_v0_2.py --quickstart
+```
+
 ### Deterministic Replay
 
 SmartBulb:
@@ -145,6 +151,18 @@ DoorLock:
 python demo/CAPS-DoorLock/caps_doorlock_v0_3.py --verify
 ```
 
+Router:
+
+```
+python demo/CAPS-Router/caps_router_v0_2.py --verify
+```
+
+Expected:
+
+- Verification Result: PASS
+- deterministic replay confirmed
+- same structure -> same certificate
+
 ### Unsafe Request Demonstrations
 
 SmartBulb:
@@ -157,6 +175,12 @@ DoorLock:
 
 ```
 python demo/CAPS-DoorLock/caps_doorlock_v0_3.py --scenario remote_unlock --profile connected --request forged_remote_unlock --explain
+```
+
+Router:
+
+```
+python demo/CAPS-Router/caps_router_v0_2.py --scenario remote_admin --profile maintenance --request wan_probe --explain
 ```
 
 Expected observations:
@@ -292,6 +316,7 @@ Current:
 
 - CAPS-SmartBulb — reference implementation for connected capability surfaces
 - CAPS-DoorLock — physical-access structural visibility demonstration
+- CAPS-Router — network infrastructure visibility demonstration
 
 Planned:
 
@@ -301,7 +326,6 @@ Planned:
 - CAPS-IoT
 - CAPS-Refrigerator
 - CAPS-Speaker
-- CAPS-Router
 
 Future demonstrations are expected to reuse shared structural resolution, deterministic replay verification, certificate generation, and a shared `caps-core`.
 
@@ -341,6 +365,24 @@ Example:
 
 ```
 python demo/CAPS-DoorLock/caps_doorlock_v0_3.py --quickstart
+```
+
+---
+
+### CAPS-Router
+
+Network infrastructure demonstration exploring structural visibility across router capability surfaces.
+
+Quick Links:
+
+- [CAPS-Router Folder](demo/CAPS-Router/)
+- [Router README](demo/CAPS-Router/README.md)
+- [Router Script](demo/CAPS-Router/caps_router_v0_2.py)
+
+Example:
+
+```
+python demo/CAPS-Router/caps_router_v0_2.py --quickstart
 ```
 
 ---
