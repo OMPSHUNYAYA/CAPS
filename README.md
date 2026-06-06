@@ -137,6 +137,14 @@ python demo/CAPS-DoorLock/caps_doorlock_v0_3.py --quickstart
 python demo/CAPS-Router/caps_router_v0_2.py --quickstart
 ```
 
+### Printer Quickstart
+
+```
+python demo/CAPS-Printer/caps_printer_v1_8.py --quickstart
+```
+
+---
+
 ### Deterministic Replay
 
 SmartBulb:
@@ -157,11 +165,19 @@ Router:
 python demo/CAPS-Router/caps_router_v0_2.py --verify
 ```
 
+Printer:
+
+```
+python demo/CAPS-Printer/caps_printer_v1_8.py --verify
+```
+
 Expected:
 
 - Verification Result: PASS
 - deterministic replay confirmed
 - same structure -> same certificate
+
+---
 
 ### Unsafe Request Demonstrations
 
@@ -181,6 +197,12 @@ Router:
 
 ```
 python demo/CAPS-Router/caps_router_v0_2.py --scenario remote_admin --profile maintenance --request wan_probe --explain
+```
+
+Printer:
+
+```
+python demo/CAPS-Printer/caps_printer_v1_8.py --scenario unsafe_remote_print --profile connected --request remote_job_spoof --explain
 ```
 
 Expected observations:
@@ -317,10 +339,10 @@ Current:
 - CAPS-SmartBulb — reference implementation for connected capability surfaces
 - CAPS-DoorLock — physical-access structural visibility demonstration
 - CAPS-Router — network infrastructure visibility demonstration
+- CAPS-Printer — document-output and printer-domain structural visibility demonstration
 
 Planned:
 
-- CAPS-Printer
 - CAPS-Camera
 - CAPS-Vehicle
 - CAPS-IoT
@@ -383,6 +405,25 @@ Example:
 
 ```
 python demo/CAPS-Router/caps_router_v0_2.py --quickstart
+```
+
+---
+
+### CAPS-Printer
+
+Document-output demonstration exploring structural visibility across printer, queue, cache, firmware, audit, custody, evidence, and final-decision surfaces.
+
+Quick Links:
+
+- [CAPS-Printer Folder](demo/CAPS-Printer/)
+- [Printer README](demo/CAPS-Printer/README.md)
+- [Printer Script](demo/CAPS-Printer/caps_printer_v1_8.py)
+- [Printer Reference Outputs](demo/CAPS-Printer/raw_reference_outputs.txt)
+
+Example:
+
+```
+python demo/CAPS-Printer/caps_printer_v1_8.py --quickstart
 ```
 
 ---
