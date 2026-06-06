@@ -101,9 +101,19 @@ CAPS/
 │   │   └── caps_smartbulb_v0_11.py
 │   │
 │   ├── CAPS-DoorLock/
-│   ├── CAPS-Camera/
-│   ├── CAPS-Printer/
+│   │   ├── README.md
+│   │   └── caps_doorlock_v0_3.py
+│   │
 │   ├── CAPS-Router/
+│   │   ├── README.md
+│   │   └── caps_router_v0_2.py
+│   │
+│   ├── CAPS-Printer/
+│   │   ├── README.md
+│   │   ├── caps_printer_v1_8.py
+│   │   └── raw_reference_outputs.txt
+│   │
+│   ├── CAPS-Camera/
 │   ├── CAPS-Vehicle/
 │   ├── CAPS-Refrigerator/
 │   ├── CAPS-AI-Agent/
@@ -118,7 +128,7 @@ CAPS/
 │   ├── CAPS-Visibility-Scenario-Examples.md  
 │   ├── Dependency-Elimination-Framework.png  
 │   ├── Shunyaya-Structural-Stack.png  
-│   └── CAPS_Diagram.png
+│   └── CAPS-Diagram.png
 ```
 
 More demonstrations will be added progressively.
@@ -129,7 +139,7 @@ More demonstrations will be added progressively.
 
 See:
 
-`docs/CAPS_Diagram.png`
+`docs/CAPS-Diagram.png`
 
 `docs/Dependency-Elimination-Framework.png`
 
