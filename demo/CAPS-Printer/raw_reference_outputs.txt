@@ -1,0 +1,106 @@
+Raw Reference Outputs - CAPS-Printer
+
+---
+
+**Platform Note**
+
+This applies only to `raw_reference_outputs.txt`.
+
+The README already documents platform differences for multi-line commands.
+
+No additional README changes are required here.
+
+---
+
+C:\Users\ASUS\Desktop\CAPS-Printer>python caps_printer_v1_8.py --verify
+Verification Result: PASS
+Verification Certificate: c23ed81675f446eb
+Deterministic replay confirmed.
+
+---
+
+C:\Users\ASUS\Desktop\CAPS-Printer>python caps_printer_v1_8.py --challenge
+Challenge Result: PASS
+Challenge Certificate: 69f8e64310b47ece
+
+---
+
+C:\Users\ASUS\Desktop\CAPS-Printer>python caps_printer_v1_8.py --invariants
+Invariant Result: PASS
+Invariant Certificate: 7929d899d270e16d
+
+---
+
+C:\Users\ASUS\Desktop\CAPS-Printer>python caps_printer_v1_8.py --manifest
+Project: CAPS-Printer
+Version: 1.8
+Capability Count: 22
+Scenario Count: 15
+Profile Count: 6
+Request Count: 10
+Core Formula: capability_visible = resolve(capability, scenario, protection_profile, request_structure)
+Core Invariant: same structure -> same visibility -> same certificate
+Release Certificate: 46438832b53026bb
+
+---
+
+C:\Users\ASUS\Desktop\CAPS-Printer>python caps_printer_v1_8.py ^
+More? --governance-audit ^
+More? --scenario remote_print ^
+More? --profile connected ^
+More? --request normal ^
+More? --policy standard ^
+More? --document-class public_document ^
+More? --role employee ^
+More? --context trusted_office_device ^
+More? --approval manager_approved ^
+More? --release-mode secure_pull_release ^
+More? --actor release_operator ^
+More? --job-state released_job ^
+More? --retention-state short_spool_retention ^
+More? --data-destination department_queue ^
+More? --device-health healthy_device ^
+More? --risk-posture normal_risk ^
+More? --compliance-mode ordinary_mode ^
+More? --trust-zone local_trusted_zone ^
+More? --evidence-view incident_evidence_view ^
+More? --recovery-action escalate_review ^
+More? --transfer-boundary vendor_transfer ^
+More? --custody-state legal_custody ^
+More? --final-decision hold_output
+CAPS-Printer v1.8 Governance Audit
+Scenario: remote_print
+Profile: connected
+Request: normal
+Policy: standard
+Document Class: public_document
+Role: employee
+Context: trusted_office_device
+Approval: manager_approved
+Release Mode: secure_pull_release
+Actor: release_operator
+Job State: released_job
+Retention State: short_spool_retention
+Data Destination: department_queue
+Device Health: healthy_device
+Risk Posture: normal_risk
+Compliance Mode: ordinary_mode
+Trust Zone: local_trusted_zone
+Evidence View: incident_evidence_view
+Recovery Action: escalate_review
+Transfer Boundary: vendor_transfer
+Custody State: legal_custody
+Final Decision: hold_output
+Surface Certificate: ee6b7fde56856687
+Governance Certificate: 0551e9b69f66c999
+Selected Capability States:
+  - cloud_print: DEFERRED | Actor responsibility does not admit job submission or remote movement visibility. | cert=1c583b86ac93082d
+  - remote_print_api: DEFERRED | Actor responsibility does not admit job submission or remote movement visibility. | cert=2546257c766f26c3
+  - scan_to_email: FORBIDDEN | Scan-to-email capability is not required for this scenario. | cert=ef6745ca05f36034
+  - document_cache: ISOLATED | Custody state preserves legal queue, audit, or cache evidence. | cert=e08b8020a466d755
+  - admin_console: ISOLATED | Transfer boundary admits bounded vendor service visibility. | cert=f5ccf0b17e541810
+  - firmware_update: ISOLATED | Transfer boundary admits bounded vendor service visibility. | cert=178c337b6e03a210
+  - audit_logs: ISOLATED | Evidence view preserves incident queue, audit, or cache evidence. | cert=d7c90c85eafb149c
+  - secure_release: DEFERRED | Evidence view defers movement, release, and physical output while incident evidence is reviewed. | cert=03f4d142cdccdcf2
+Visible Surface: job_queue, document_cache, credential_store, admin_console, firmware_update, audit_logs, supply_monitor
+Deferred Surface: print_engine, paper_feed, ink_toner_system, cloud_print, remote_print_api, secure_release
